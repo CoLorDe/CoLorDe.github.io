@@ -1,0 +1,295 @@
+:root{
+  margin: 0em;
+  padding: 0;
+  font-family: Helvetica, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: var(--darkpurple);
+  color: var(--darkpurple);
+
+  --darkpurple: #2e304b;
+  --lightpurple: #5e406b;
+  --green: #9efdd0;
+  --orange:#ffbda0;
+  --ice:   #c1dff0;
+  --theme-color: #9efdd0;
+}
+
+body {
+ padding: 0;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.theme-switch {
+  display:flex;
+  flex-direction: column;
+}
+
+.dot {
+  margin: 0rem .3rem;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.dot:active {
+  border-color: #999;
+}
+
+.mint {
+  background-color: var(--green);
+}
+
+.peach {
+  background-color: var(--orange);
+}
+
+.ice {
+  background-color: var(--ice);
+}
+
+.intro > p {
+  margin: 0em;
+  padding: 1em 0em;
+  font-size: 1.2rem;
+}
+
+p.clause {
+  color: #AAA;
+  font-size: 0.85em;
+  padding: 2em 0;
+}
+
+.links {
+  color: #FFF;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.links:hover .icon, .links:hover {
+  color: var(--theme-color);
+  fill: var(--theme-color);
+  transition-duration: 1s;
+}
+
+.content p {
+  font-weight: 600;
+  max-width: 70%;
+}
+
+
+.icon {
+  fill: #FFF;
+  vertical-align: -0.5em;
+}
+
+.contact {
+  background-color: #00000000;
+  border: solid;
+  border-color: var(--theme-color);
+  color: var(--theme-color);
+  border-radius: 5em;
+  width: 10em;
+  height: 3em;
+  font-size: 1em;
+}
+
+.contact:hover {
+  background-color: var(--theme-color);
+  color: var(--darkpurple);
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.main-panel {
+  background-color: #2e304b;
+  color: var(--theme-color);
+  height: 100vh;
+  width: 30vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+}
+
+.content-block {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: .3rem ;
+}
+
+.content-block a {
+  text-decoration: none;
+  color: var(--darkpurple);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #666;
+  padding: .5rem 1rem;
+}
+
+.content-block a:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.content-block a:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.content-block a:hover {
+  text-decoration: none;
+  background-color: var(--darkpurple);
+  color: var(--theme-color);
+  transition-property: all;
+  transition-duration: 1s;
+
+}
+
+.panels-container {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: -1rem;
+}
+
+.panel {
+  margin: 0rem;
+  border: 0rem;
+  height: 100vh;
+  width: 60vw;
+  position: sticky;
+  top: 0;
+  box-shadow: -2px -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 5em;
+  justify-content: center;
+  align-content: center;
+}
+
+.grey-panel {
+  background-color: #CCC;
+}
+
+.white-panel {
+  background-color: #FFF;
+}
+
+.emicircle {
+  background-color: var(--theme-color);
+  border-radius: 50vh 50vh 0 0;
+  display: flex;
+  max-width: 20rem;
+  align-self: center;
+}
+
+.profile-img {
+  max-width: 20rem;
+  height: auto;
+}
+
+
+.grid {
+  width: 100%;
+  min-height: 70vh;
+  display: grid;
+}
+
+.techs-grid {
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.grid-element {
+  width: 200%;
+  height: auto;
+  text-align: center;
+}
+
+.reactlogo {
+  grid-column-start: 5;
+}
+
+.vuelogo {
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+.nodelogo {
+  grid-column-start: 8;
+  grid-row-start: 5;
+}
+
+.flasklogo {
+  width: 300%;
+  grid-column-start: 3;
+  grid-row-start: 9;
+}
+
+.wplogo {
+  width:300%;
+  grid-column-start: 7;
+  grid-row-start: 9;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contact-form {
+  width: 90%;
+  background-color: var(--darkpurple);
+  border-width: 0 0 3px 3px;
+  border-style: solid;
+  border-color: black var(--lightpurple);
+  color: var(--theme-color);
+  padding: 3rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #666;
+}
+
+.form-group {
+  display: flex;
+  align-items: flex-start;
+}
+
+input {
+  height: 3rem;
+  margin: 1rem;
+  border-style: none;
+  border-radius: 10px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  max-width: 20rem;
+  box-shadow: 0 0 5px inset #000;
+}
+
+textarea {
+  margin: 1rem;
+  height: 6em;
+  border-style: none;
+  border-radius: 10px;
+  padding: 1em;
+  font-family: Helvetica, sans-serif;
+  box-shadow: 0 0 5px inset #000;
+}
